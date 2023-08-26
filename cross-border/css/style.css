@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* variable for my theme */
+:root {
+  --primary-color: linear-gradient(to right, #ab44af, #f0419c);
+}
+
+/* Variable for my display */
+:root {
+  --flex-layout: flex;
+  --radius-8px: 8px;
+  --outline: 1px solid #e8e8e8;
+}
+
+main {
+  height: 100vh;
+  background: var(--primary-color);
+  display: var(--flex-layout);
+  justify-content: center;
+  align-items: center;
+}
+
+main section {
+  height: 80%;
+  background-color: #ffffff;
+  width: 27rem;
+  border-radius: 8px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+main section h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+main section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: var(--outline);
+  width: max-content;
+  border-radius: var(--radius-8px);
+  margin: 2.5rem auto;
+}
+
+ button {
+  padding: 1rem 3.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  border-top-right-radius: var(--radius-8px);
+  border-bottom-right-radius: var(--radius-8px);
+}
+
+ #login {
+  background: var(--primary-color);
+  border-radius: var(--radius-8px);
+  z-index: 1px;
+  color: #ffffff;
+  border: none;
+}
+
+main section form {
+  display: grid;
+  gap: 1.5rem;
+  padding: 0 2.5rem;
+  margin-top: -0.5rem;
+}
+
+main section form input {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: var(--outline);
+  border-radius: var(--radius-8px);
+}
+
+p {
+  margin-top: -0.7rem;
+  color: hotpink;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  font-weight: 500;
+}
+
+span a {
+  color: hotpink;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b2b2b2;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b2b2b2;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b2b2b2;
+}
